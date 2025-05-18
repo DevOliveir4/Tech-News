@@ -1,0 +1,99 @@
+.destaques-secundario {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    padding: 0px 32px;
+
+    & .destaques-IA {
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0.5rem 0px;
+        position: relative;
+
+        & .titulo {
+        margin-bottom: 0px;
+        }
+
+        & .destaques-IA_card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+
+            & .IA-card_conteudo {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                grid-column: 1/4;
+
+                .tag {
+                    display: inline-block;
+                    margin-bottom: 0px;
+                    }
+
+                & h2 {
+                    font: var(--h2);
+                }
+
+                & p {
+                    font: var(--text-sm);
+                }
+
+            }
+
+            & img {
+                border-radius: 3px;
+                grid-column: 4/5;
+            }
+        }
+    }
+
+    & .add {
+        
+        & img {
+            border-radius: 3px;
+        }
+    }
+
+    & .viu-isso_conteiner {
+        grid-column: 4/6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+        & .viu-isso-conteudo {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0.5rem 0px;
+            
+
+            & .titulo {
+            margin-bottom: 0px;
+            }
+
+            & .viu-isso_card {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 1rem;
+
+                & img {
+                    grid-column: 1/2;
+                    border-radius: 3px;
+                }
+
+                & .viu-isso-card_conteudo {
+                    grid-column: 2/6;
+
+                    .tag {
+                    display: inline-block;
+
+                    }
+                }
+            }
+        }
+    }
+}

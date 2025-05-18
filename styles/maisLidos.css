@@ -1,0 +1,52 @@
+.mais-lidos {
+    padding: 10px 32px 80px;
+    position: relative;
+    
+    & .titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & span {
+            font: var(--text-span);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+        }
+
+        & span:nth-child(2):hover {
+            color: var(--brand-color-dark);
+
+        }
+    }
+
+    & .mais-lidos_conteudo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        position: relative;
+
+        & .mais-lidos_card {
+
+            & img {
+                width: 100%;
+                border-radius: 3px;
+            }
+
+            & .tag {
+                position: absolute;
+                top: 0;
+                padding: 4px 8px;
+                background-color: var(--brand-color-dark);
+                border-radius: 4px;
+                margin: 10px;
+            }
+
+            & h2 {
+                font: var(--h2);
+            }
+        }
+    }
+}

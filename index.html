@@ -3,11 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Portal de Notíciais</title>
 </head>
 <body>
-    <h2>teste</h2>
-    <a href="">teste</a>
+    <header class="conteiner">
+        <nav>
+            <img src="assets/icons/List.svg" alt="Icone de Lista">
+            <h2>Menu</h2>
+        </nav>
+        <div class="logo"><a href="#"><img src="assets/Logo.svg" alt="Logo"></a></div>
+        <nav>
+            <img src="assets/icons/MagnifyingGlass.svg" alt="Icone de Lupa">
+            <h2>Busca</h2>
+        </nav>
+    </header>
+
+    <nav class="nav-bar conteiner">
+        <hr id="linha01">
+        <ul>
+            <li>
+                <a href="#">Inteligência Artificial</a>
+            </li>
+            <li><a href="#">Blockchain</a></li>
+            <li><a href="#">Hologramas</a></li>
+            <li><a href="#">Internet</a></li>
+            <li><a href="#">Vestíveis</a></li>
+            <li><a href="#">Realidade Aumentada</a></li>
+            <li><a href="#">Realidade  Virtual</a></li>
+        </ul>
+        <hr id="linha02">
+    </nav>
+
+    <main class="destaques conteiner">
+        <div class=" card robotica">
+            <img src="assets/img/Image 01.png" alt="">
+
+            <div class="card-conteudo">
+                <p class="tag">ROBÓTICA</p>
+                <h1>   
+                    Robôs domésticos começam a ser adotados para tarefas diárias,   prometendo mais conforto e eficiência nas residências.
+                </h1>
+            </div>
+        </div>
+        <div class="card hologramas">
+            <img src="assets/img/Image 02.png" alt="">
+
+            <div class="card-conteudo">
+                <p class="tag">HOLOGRAMAS</p>
+                <h3>   
+                    Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!
+                </h3>
+            </div>
+        </div>
+        <div class="card internet">
+            <img src="assets/img/Image 03.png" alt="">
+            
+            <div class="card-conteudo">
+                <p class="tag">INTERNET</p>
+                <h3>   
+                    Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comunicamos.
+                </h3> 
+            </div>
+        </div>
+        <div class="card vestíveis">
+            <img src="assets/img/Image 04.png" alt="">
+
+            <div class="card-conteudo">
+                <p class="tag">VESTÍVEIS</p>
+                <h3>   
+                    Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal.
+                </h3>
+            </div>
+        </div>
+        <div class="card realidade-virtual">
+            <img src="assets/img/Image 05.png" alt="">
+
+            <div class="card-conteudo">
+                <p class="tag">REALIDADE-VIRTUAL</p>
+                <h3>   
+                    Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem tradicional.
+                </h3>
+            </div>
+        </div>
+    </main>
+
+    <article class="mais-lidos conteiner">
+        <hr class="top-line">
+        <div class="titulo">
+            <span>Mais lidos da semana</span>
+            <a href="#">Ver tudo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="mais-lidos_conteudo">
+            <div class="mais-lidos_card">
+                <img src="assets/img/Image 06.png" alt="">
+                <p class="tag">VEÍCULOS</p>
+                <h2>  
+                    Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais.
+                </h2>
+            </div>
+            <div class="mais-lidos_card">
+                <img src="assets/img/Image 07.png" alt="">
+                <p class="tag">HOLOGRAMAS</p>
+                <h2>
+                    Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas virtuais mais realistas e envolventes.
+                </h2>
+            </div>
+            <div class="mais-lidos_card">
+                <img src="assets/img/Image 08.png" alt="">
+                <p class="tag">REALIDADE-VIRTUAL</p>
+                <h2>
+                    Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiências de jogo totalmente envolventes.
+                </h2>
+            </div>
+            <div class="mais-lidos_card">
+                <img src="assets/img/Image 09.png" alt="">
+                <p class="tag">INTERNET</p>
+                <h2>
+                    Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites.
+                </h2>
+            </div>
+        </div>
+    </article>
+
+    <section class="destaques-secundario conteiner">
+        <main class="destaques-IA">
+
+            <hr class="top-line">
+
+            <div class="titulo">
+                <span>Destaques de Inteligencia Artificial</span>
+                <a href="#">Ver tudo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <figure class="destaques-IA_card">
+                    <figcaption class="IA-card_conteudo">
+                        <p class="tag">INTELIGENCIA ARTIFICIAL</p>
+                        <h2>Empresa surpreende o mundo ao anunciar um algoritmo capaz de prever eventos futuros com alta precisão.</h2>
+                        <p>Em um avanço surpreendente da inteligência artificial, uma empresa anuncia o desenvolvimento de um algoritmo capaz de prever eventos futuros com notável precisão. Descubra como essa tecnologia está desafiando as fronteiras da previsão e quais são as implicações para diversas áreas, desde finanças até planejamento estratégico.</p>
+                    </figcaption>
+                <img src="assets/img/Image 10.png" alt="">
+            </figure>
+
+            <figure class="destaques-IA_card">
+                    <figcaption class="IA-card_conteudo">
+                        <p class="tag">INTELIGENCIA ARTIFICIAL</p>
+                        <h2>Dispositivo portátil promete traduzir instantaneamente diferentes idiomas, facilitando a comunicação global.</h2>
+                        <p>Em um mundo cada vez mais conectado, a comunicação sem fronteiras é essencial. Nesse contexto, um dispositivo portátil surge como um verdadeiro herói linguístico, prometendo quebrar as barreiras idiomáticas instantaneamente. Imagine poder se comunicar fluentemente em qualquer lugar do mundo, independentemente do idioma local.</p>
+                    </figcaption>
+                <img src="assets/img/Image 11.png" alt="">
+            </figure>
+
+            <figure class="destaques-IA_card">
+                    <figcaption class="IA-card_conteudo">
+                        <p class="tag">INTELIGENCIA ARTIFICIAL</p>
+                        <h2>Criados para auxiliar idosos, robôs de companhia ganham popularidade, oferecendo suporte emocional e físico aos usuários.</h2>
+                        <p>A tecnologia não só avança, mas também busca tornar a vida mais significativa para todas as gerações. No cenário atual, os robôs sociais, projetados especialmente para oferecer apoio e companhia aos idosos, estão ganhando destaque.</p>
+                    </figcaption>
+                <img src="assets/img/Image 12.png" alt="">
+            </figure>
+
+            <figure class="destaques-IA_card">
+                    <figcaption class="IA-card_conteudo">
+                        <p class="tag">INTELIGENCIA ARTIFICIAL</p>
+                        <h2>Aplicativo utiliza inteligência artificial para ajudar usuários a manterem o foco e aumentarem a produtividade no dia a dia.</h2>
+                        <p>No turbilhão da vida moderna, onde distrações são abundantes, um aplicativo inovador surge como um aliado indispensável para quem busca maior concentração e eficiência no cotidiano. Utilizando avançados algoritmos de inteligência artificial, este aplicativo promete mais do que simplesmente gerenciar tarefas. </p>
+                    </figcaption>
+                <img src="assets/img/Image 13.png" alt="">
+            </figure>
+        </main>
+        
+        
+
+        <aside class="viu-isso_conteiner">
+
+
+            <div class="add"><img src="assets/Ads.png" alt=""></div>
+
+
+            <div class="viu-isso-conteudo">
+                
+                <hr class="top-line">
+                <div class="titulo">
+                    <span>Viu isso aqui?</span>
+                    <a href="#">Ver tudo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <figure class="viu-isso_card">
+                    <img src="assets/img/Image 14.png" alt="">
+                    <figcaption class="viu-isso-card_conteudo">
+                        <p class="tag">SOFTWARE</p>
+                        <h2>Aplicativo de monitoramento ambiental ganha destaque, incentivando práticas ecológicas e...</h2>
+                    </figcaption>
+                </figure>
+                <figure class="viu-isso_card">
+                    <img src="assets/img/Image 14.png" alt="">
+                    <figcaption class="viu-isso-card_conteudo">
+                        <p class="tag">REALIDADE VIRTUAL</p>
+                        <h2>Óculos de realidade virtual com feedback tátil proporcionam uma experiência sensorial completa....</h2>
+                    </figcaption>
+                </figure>
+                <figure class="viu-isso_card">
+                    <img src="assets/img/Image 14.png" alt="">
+                    <figcaption class="viu-isso-card_conteudo">
+                        <p class="tag">CRIPTOMOEDAS</p>
+                        <h2>Surge uma nova moeda digital baseada em tecnologias sustentáveis, buscando minimizar o impacto...</h2>
+                    </figcaption>
+                </figure>
+                <figure class="viu-isso_card">
+                    <img src="assets/img/Image 14.png" alt="">
+                    <figcaption class="viu-isso-card_conteudo">
+                        <p class="tag">DRONES</p>
+                        <h2>Empresas de e-commerce implementam frota de drones para entregas rápidas, transformando o cenário...</h2>
+                    </figcaption>
+                </figure>
+                <figure class="viu-isso_card">
+                    <img src="assets/img/Image 14.png" alt="">
+                    <figcaption class="viu-isso-card_conteudo">
+                        <p class="tag">IMPRESSÃO 3D</p>
+                        <h2>Tecnologia inovadora permite a impressão 3D de órgãos humanos, revolucionando a medicina e a lista...</h2>
+                    </figcaption>
+                </figure>
+            </div>
+
+            
+        </aside>
+    </section>
 </body>
 </html>

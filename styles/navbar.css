@@ -1,0 +1,35 @@
+.nav-bar {
+    padding: 15px 32px;
+    position: relative;
+
+    & #linha01 {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        right: 50%;
+        transform: translate(50%);
+        height: 1px;
+        border: none;
+        border-top: 1px solid var(--stroke-color); 
+    }
+
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+
+        & li a{
+            font: var(--h3);
+        }
+    }
+
+        & #linha02 {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        right: 50%;
+        transform: translate(50%);
+        border: none;
+        border-top: 1px solid var(--stroke-color); 
+    }
+}

@@ -18,13 +18,19 @@
     --h3: 800 0.9rem/140% var(--font-family);
     --text-span: 600 0.9rem/145% var(--font-family);
     --text: 600 1rem/145% var(--font-family);
-    --text-sm: 600 0.9rem/160% var(--font-family);
+    --text-sm: 400 0.9rem/160% var(--font-family);
+    --text-ssm: 400 0.7rem/160% var(--font-family);
 }
 
 body {
     font: var(--text-sm);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+}
+
+.conteiner {
+    max-width: 1416px;
+    margin: 0 auto;
 }
 
 a {
@@ -38,4 +44,49 @@ a:hover {
 
 h1, h2, h3 {
     font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & span {
+            font: var(--text-span);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+        }
+
+        & span:nth-child(2):hover {
+            color: var(--brand-color-dark);
+
+        }
+}
+
+.top-line {
+        
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border: none;
+        border-top: 1px solid var(--stroke-color);
+}
+
+.tag {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--brand-color-dark);
+    margin-bottom: 10px;
+}
+
+
+img {
+    width: 100%;
 }
